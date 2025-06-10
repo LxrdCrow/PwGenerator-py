@@ -29,6 +29,5 @@ Password saved to passwords.txt
 ## Next Feature
 
 - GUI with **Tkinter**: a Python library for building graphical applications
-```
 
 
