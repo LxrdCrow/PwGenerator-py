@@ -1,33 +1,69 @@
-# Password_Generator-py
+# PWGenerator-py
 
-## Idea & Creation
+**PWGenerator-py** is a secure password generator built with Python, featuring a graphical user interface (GUI) made with Tkinter.  
+It allows you to create customized passwords, visualize their strength with color feedback, and save them locally in a simple and user-friendly way.
 
-Building the first logical structure of a password generator with Python.
+---
 
-Features:
-- Function for basic password logic
-- Function to create a strong password
-- Function to prompt the user on how to generate a password
-- `passwords.txt` file for storing all your generated passwords
+## Key Features
 
+- Generate strong passwords with customizable options:
+  - Password length (default: 12)
+  - Include uppercase, lowercase, digits, and punctuation
+- Password strength evaluation with color-coded feedback
+- User-friendly and responsive GUI built with Tkinter
+- Read-only output field to prevent accidental password modification
+- Save generated passwords securely to a local `passwords.txt` file
+- Standalone executable (`.exe`) support via PyInstaller for easy sharing and use
 
-## Example
+---
 
+## Installation and Usage
+
+### Requirements
+
+- Python 3.8 or higher  
+- Tkinter (usually included in standard Python distributions)
+
+### Running from source
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/PWGenerator-py.git
+   cd PWGenerator-py/Gui
+````
+
+2. Install any dependencies (if applicable):
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the GUI:
+
+   ```bash
+   python interface.py
+   ```
+
+### Standalone Executable
+
+The standalone executable `PWGenerator.exe` is located in the `dist/` folder and can be shared or run without requiring a Python installation.
+
+---
+
+## Usage Example
+
+```plaintext
+- Set desired password length (e.g., 16)
+- Select character sets to include (uppercase, lowercase, digits, punctuation)
+- Click "Generate" or Enter to create the password
+- View password strength with color feedback: green (strong), orange (medium), red (weak)
+- Click "Save" to store the password locally
 ```
 
-Enter password length (default 12): 21
-Include uppercase? (y/n): y
-Include lowercase? (y/n): y
-Include digits? (y/n): y
-Include punctuation? (y/n): y
 
-Generated password: \_a#3Q4pO\qJMc6F|5-\~Qy
-Password saved to passwords.txt
 
-```
 
-## Next Feature
 
-- GUI with **Tkinter**: a Python library for building graphical applications
 
 
