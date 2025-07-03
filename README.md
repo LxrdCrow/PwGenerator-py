@@ -1,53 +1,63 @@
 # PWGenerator-py
 
-**PWGenerator-py** is a secure password generator built with Python, featuring a graphical user interface (GUI) made with Tkinter.  
-It allows you to create customized passwords, visualize their strength with color feedback, and save them locally in a simple and user-friendly way.
+**PWGenerator-py** is a secure and user-friendly password generator built with Python, featuring a modern GUI created with Tkinter.
+It allows you to generate customized strong passwords, see their strength with intuitive color feedback, save them securely, and run the app easily via a standalone executable with a custom icon.
 
 ---
 
 ## Key Features
 
-- Generate strong passwords with customizable options:
-  - Password length (default: 12)
-  - Include uppercase, lowercase, digits, and punctuation
-- Password strength evaluation with color-coded feedback
-- User-friendly and responsive GUI built with Tkinter
-- Read-only output field to prevent accidental password modification
-- Save generated passwords securely to a local `passwords.txt` file
-- Standalone executable (`.exe`) support via PyInstaller for easy sharing and use
+* Generate strong passwords with flexible options:
+
+  * Set password length (default: 12)
+  * Include uppercase letters, lowercase letters, digits, and punctuation
+* Visual password strength evaluation with clear color-coded feedback (red, orange, green)
+* Responsive and clean GUI using Tkinter, including a read-only output field to prevent accidental edits
+* Save generated passwords safely to a local `passwords.txt` file
+* Ready-to-use standalone Windows executable (`.exe`) with a custom icon — no Python installation required
+
+---
+
+## Requirements
+
+* For running from source:
+
+  * Python 3.8 or higher
+  * Tkinter (usually pre-installed with Python)
+* For running the standalone executable:
+
+  * Windows OS (no Python or dependencies needed)
 
 ---
 
 ## Installation and Usage
 
-### Requirements
-
-- Python 3.8 or higher  
-- Tkinter (usually included in standard Python distributions)
-
 ### Running from source
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/PWGenerator-py.git
    cd PWGenerator-py/Gui
-````
+   ```
 
-2. Install any dependencies (if applicable):
+2. (Optional) Install dependencies if you add any later:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the GUI:
+3. Run the application:
 
    ```bash
    python interface.py
    ```
 
-### Standalone Executable
+### Running the standalone executable
 
-The standalone executable `PWGenerator.exe` is located in the `dist/` folder and can be shared or run without requiring a Python installation.
+1. Navigate to the `dist` folder inside the project directory.
+2. Double-click the `interface.exe` file (or your renamed executable) to launch the app.
+3. Enjoy the password generator with its custom icon and without needing Python installed.
 
 ---
 
@@ -55,11 +65,17 @@ The standalone executable `PWGenerator.exe` is located in the `dist/` folder and
 
 ```plaintext
 - Set desired password length (e.g., 16)
-- Select character sets to include (uppercase, lowercase, digits, punctuation)
-- Click "Generate" or Enter to create the password
-- View password strength with color feedback: green (strong), orange (medium), red (weak)
-- Click "Save" to store the password locally
+- Select which character sets to include (uppercase, lowercase, digits, punctuation)
+- Click "Generate" or press Enter to create a password
+- View the password strength displayed with color feedback:
+    * Green = Strong
+    * Orange = Medium
+    * Red = Weak
+- Click "Save" to append the generated password to the local passwords.txt file
 ```
+
+
+
 
 
 
