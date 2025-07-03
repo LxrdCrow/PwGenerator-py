@@ -1,3 +1,5 @@
+# logic.py
+
 import random
 import string
 
@@ -53,3 +55,4 @@ def classify_password_strength(password):
         return "Medium"
     else:
         return "Weak"
+
